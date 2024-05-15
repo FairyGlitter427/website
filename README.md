@@ -1,4 +1,4 @@
-# website
+# Conny's Website
 
 ## Project setup
 ```
