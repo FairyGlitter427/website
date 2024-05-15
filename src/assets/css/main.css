@@ -1,0 +1,33 @@
+:root {
+    /* --primary-color: #ff7d7d;
+    --secondary-color: #ff9090;
+    --text-color: rgb(30,30,30); */
+    --primary-color: rgb(80, 80, 80);
+    --secondary-color: rgb(60,60,60);
+    --text-color: rgb(255, 255, 255);
+    --text-color-hover: rgb(10, 10, 10);
+    --background-color: rgb(80, 80, 80);
+    --background-color-dark: rgb(60,60,60);
+    --white: #fff;
+    --grey: rgb(200,200,200);
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: auto;
+}
+
+.canvas {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--background-color-dark) 100%);
+  }
