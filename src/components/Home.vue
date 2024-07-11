@@ -3,10 +3,7 @@
   <div class="canvas">
     <div class="home">
       <div class="section">
-        <div class="text">Section 1</div>
-      </div>
-      <div class="section">
-        <div class="text">Section 2</div>
+        <Content />
       </div>
     </div>
   </div>
@@ -16,11 +13,13 @@
 <script>
 import Header from './AppHeader/Header.vue'
 import Footer from './AppFooter/Footer.vue'
+import Content from './Content.vue'
 
 export default {
   name: 'Home',
   components: {
     Header,
+    Content,
     Footer
   },
   props: {
@@ -32,13 +31,21 @@ export default {
 <style scoped>
 .home {
   width: 100%;
-  height: 1000px;
+  height: auto;
   margin: 0 auto;
-  padding: 160px 0 50px 0;
-  border: 1px solid black;
+  padding: 50px 0 50px 0;
 }
+
 .section {
   margin: 20px auto;
-  border: 1px solid grey;
+}
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px){
+  
 }
 </style>

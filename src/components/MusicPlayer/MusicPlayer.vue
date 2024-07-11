@@ -3,6 +3,7 @@
         <div class="music-player__controls">
             <button @click="playAudio">
                 <font-awesome-icon icon="fa-solid fa-play" />
+                <span>{{playText}}</span>
             </button>
         </div>
     </div>
@@ -15,15 +16,19 @@ export default {
     name: 'MusicPlayer', 
     data() {
         return {
-        audio: new Audio(bgm)
+        audio: new Audio(bgm),
+        playText: 'Play'
         }
     },
     methods: {
         playAudio() {
+            this.audio.volume = 0.2;
             if (this.audio.paused) {
                 this.audio.play();
+                this.playText = 'Pause';
             } else {
                 this.audio.pause();
+                this.playText = 'Play';
             }
         }
     }

@@ -1,8 +1,8 @@
 <template>
     <nav id="nav-bar">
-        <a href="../About">About</a>
-        <a href="../Resume">Resume</a>
-        <a href="#footer">Contact</a>
+        <a href="#about">About</a>
+        <a href="#hobby">Hobby</a>
+        <a href="#Contact">Contact</a>
     </nav>
 </template>
 
@@ -33,5 +33,20 @@ export default {
 #nav-bar a:hover {
     color: var(--text-color-hover);
 	transition: all 0.25s ease-in;
+}
+
+@media only screen and (max-width: 1024px){
+    #nav-bar{
+        column-gap: 0px;
+    }
+    #nav-bar a {
+    padding: 5px 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    #nav-bar a {
+    font-size: 1rem;
+    padding: 0px 10px;
+    }
 }
 </style>

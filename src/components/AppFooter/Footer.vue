@@ -1,8 +1,8 @@
 <template>
     <footer>
         <div id="footer">
-            <p>This is the footer</p>
-            <p>© 2024</p>
+            <span>Email: <a href="mailto:Connykwong123@gmail.com">Connykwong123@gmail.com</a></span>
+            <span>© 2024 Conny Kwong</span>
         </div>
     </footer>
 </template>
@@ -18,16 +18,35 @@ footer {
     width: 100%;
     height: auto;
     background-color: var(--background-color-dark);
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 #footer {
     display: flex;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#footer > span {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    #footer {
+        padding: 10px 0;
+        max-width: 100%;
+    }
+    #footer > span {
+    padding: 0 20px;
+    font-size: 0.8rem;
+}
+}
+
+@media only screen and (max-width: 600px){
+
 }
 </style>

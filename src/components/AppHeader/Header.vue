@@ -1,7 +1,7 @@
 <template>
     <header>
         <div id="header">
-            <a class="logo" href="../Home"><Logo /></a>
+            <a class="logo" href=".."><Logo /></a>
             <NavBar class="nav-bar"/>
         </div>
     </header>
@@ -62,12 +62,13 @@ header {
 #header {
     display: flex;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1024px;
     max-height: 80px;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap:20px;
 }
 
 .logo ,.nav-bar{
@@ -80,4 +81,22 @@ header.hide {
     transform: translateY(-100%);
     transition: all 0.3s ease;
 }
+@media only screen and (max-width: 1024px){
+    .logo {
+        padding-left: 20px;
+        max-width: 280px;
+    }
+}
+@media only screen and (max-width: 600px){
+    header{
+        max-height: 60px;
+    }
+    #header{
+        max-height: 60px;
+    }
+    .logo {
+        max-width: 200px;
+    }
+}
+
 </style>
