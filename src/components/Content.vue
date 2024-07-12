@@ -49,7 +49,7 @@
             <div class="text"><span>Cute huh? You may check out his life on <a href="https://www.instagram.com/lavender_the_yorkie/" target="_blank">instagram</a>.</span></div>
         </div>
     </div>
-    <div id="Contact">
+    <div id="contact">
         <div class="vertical">
             <div class="text"><span>Guess you already have had a glance on who I am~ If you want to know more about me, you may also find my on <a href="https://www.linkedin.com/in/connykwong427/" target="_blank">LinkedIn</a> or find me through an email.</span></div>
             
@@ -68,7 +68,7 @@ export default {
 </script>
 
 <style scoped>
-#about, #hobby, #Contact{
+#about, #hobby, #contact{
     padding-top: 120px; 
     display: flex;
     flex-direction: column;
@@ -142,7 +142,7 @@ export default {
 }
 
 @media only screen and (max-width: 1024px) {
-    #about, #hobby, #Contact{
+    #about, #hobby, #contact{
     padding-top: 60px; 
     gap: 60px;
     }
@@ -167,7 +167,7 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
-    #about, #hobby, #Contact{
+    #about, #hobby, #contact{
         gap: 35px;
         padding-top: 30px;
     }
