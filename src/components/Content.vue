@@ -41,9 +41,6 @@
                 <img src="../assets/img/Concert1.jpg">
                 <img src="../assets/img/Concert2.jpg">
                 <!-- <img src="../assets/img/Concert3.jpg"> -->
-                <img src="../assets/img/Concert4.jpg">
-                <img src="../assets/img/Concert5.jpg">
-                <img src="../assets/img/Concert6.jpg">
             </div>
         </div>
         <div class="vertical">
@@ -54,7 +51,7 @@
     </div>
     <div id="contact">
         <div class="vertical">
-            <div class="text"><span>Guess you already have had a glance on who I am~ If you want to know more about me, you may also find my profile on <a href="https://www.linkedin.com/in/connykwong427/" target="_blank">LinkedIn</a> or reach me through an email.</span></div>
+            <div class="text"><span>Guess you already have had a glance on who I am~ If you want to know more about me, you may also find my on <a href="https://www.linkedin.com/in/connykwong427/" target="_blank">LinkedIn</a> or find me through an email.</span></div>
             
         </div>
     </div>
